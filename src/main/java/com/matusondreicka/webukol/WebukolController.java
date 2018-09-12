@@ -88,11 +88,11 @@ public class WebukolController {
 
 //        result.add(""+json.get("id"));
 
-        try {
-            call_me();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        try {
+//            call_me();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
 
         String response = "";
         try {

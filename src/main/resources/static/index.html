@@ -30,7 +30,13 @@
         load all players
     </button>
 
-    <br></br>
+    <img ng-if="main.spinner" src='/spinner.gif'/>
+
+    <small class="badge" ng-if="!(main.spinner)" >{{main.players.length}}</small>
+
+    <br>
+
+    <br>
 
     <table class="table table-bordered">
         <thead>
