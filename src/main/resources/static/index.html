@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <script src="controller.js"></script>
 </head>
-<body ng-app="app" ng-controller="MainController as main">
+<body ng-app="app" ng-controller="MainController as main" style="padding: 15px; padding-top: 0px">
     <h2>NBA - 10 best players</h2>
-    {{main.data}}
+
     <pre>{{main.data}}</pre>
     <p>Get your greeting <a href="/greeting">here</a></p>
     <button type="button" class="btn btn-default" ng-click=" main.load() ">
