@@ -32,22 +32,22 @@ appMain.controller("MainController", function($scope, $q, $http, $timeout){
     };
 
     main.players = []
-    main.spinner = false;
+    main.waiting = false;
 
 
     main.loadPlayers = function () {
-        main.spinner = true;
+        main.waiting = true;
 
         $http.get('/players').
         success(function(data, status, headers, config) {
             console.log(" /greeting #### : "+data);
 
             main.players = data;
-            main.spinner = false;
+            main.waiting = false;
         }).
         error(function(data, status, headers, config) {
                 console.log("/info ####  error= "+error);
-                main.spinner = false;
+                main.waiting = false;
         });
     };
 

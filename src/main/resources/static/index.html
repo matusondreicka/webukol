@@ -30,9 +30,9 @@
         load all players
     </button>
 
-    <img ng-if="main.spinner" src='/spinner.gif'/>
+    <img ng-if="main.waiting" src='/spinner.gif'/>
 
-    <small class="badge" ng-if="!(main.spinner)" >{{main.players.length}}</small>
+    <small class="badge" ng-if="!(main.waiting)" >{{main.players.length}}</small>
 
     <br>
 
