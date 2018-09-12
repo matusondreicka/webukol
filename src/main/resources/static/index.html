@@ -12,13 +12,67 @@
 <body ng-app="app" ng-controller="MainController as main" style="padding: 15px; padding-top: 0px">
     <h2>NBA - 10 best players</h2>
 
-    <pre>{{main.data}}</pre>
-    <p>Get your greeting <a href="/greeting">here</a></p>
-    <button type="button" class="btn btn-default" ng-click=" main.load() ">
-        main.load()
+    <!--<p>Get your greeting <a href="/greeting">here</a></p>-->
+
+    <!--<pre>{{main.data}}</pre>-->
+
+    <!--<button type="button" class="btn btn-default" ng-click=" main.load() ">-->
+        <!--main.load()-->
+    <!--</button>-->
+    <!--<button type="button" class="btn btn-default" ng-click=" main.load2() ">-->
+        <!--main.load2()-->
+    <!--</button>-->
+    <!--<button type="button" class="btn btn-default" ng-click=" main.loadPlayers() ">-->
+        <!--main.loadPlayers()-->
+    <!--</button>-->
+
+    <button type="button" class="btn btn-default" ng-click=" main.loadPlayers() ">
+        load all players
     </button>
-    <button type="button" class="btn btn-default" ng-click=" main.load2() ">
-        main.load2()
-    </button>
+
+    <br></br>
+
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">player_name</th>
+            <th scope="col">first_name</th>
+            <th scope="col">last_name</th>
+            <th scope="col">birth_date</th>
+            <th scope="col">position</th>
+            <th scope="col">dk_position</th>
+            <th scope="col">dk_id</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in main.players">
+            <!--<th scope="row">1</th>-->
+            <td>{{item.id}}</td>
+            <td>{{item.player_name}}</td>
+            <td>{{item.first_name}}</td>
+            <td>{{item.last_name}}</td>
+            <td>{{item.birth_date}}</td>
+            <td>{{item.position}}</td>
+            <td>{{item.dk_position}}</td>
+            <td>{{item.dk_id}}</td>
+        </tr>
+        <!--<tr>-->
+            <!--<th scope="row">2</th>-->
+            <!--<td>Jacob</td>-->
+            <!--<td>Thornton</td>-->
+            <!--<td>@fat</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<th scope="row">3</th>-->
+            <!--<td>Larry</td>-->
+            <!--<td>the Bird</td>-->
+            <!--<td>@twitter</td>-->
+        <!--</tr>-->
+
+
+        </tbody>
+    </table>
+
 </body>
 </html>

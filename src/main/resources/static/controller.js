@@ -31,6 +31,20 @@ appMain.controller("MainController", function($scope, $q, $http, $timeout){
 
     };
 
+    main.players = []
+
+    main.loadPlayers = function () {
+
+        $http.get('/players').
+        success(function(data, status, headers, config) {
+            console.log(" /greeting #### : "+data);
+
+            main.players = data;
+        }).
+        error(function(data, status, headers, config) {
+                console.log("/info ####  error= "+error);
+        });
+    };
 
 
 });
