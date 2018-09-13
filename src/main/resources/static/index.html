@@ -9,34 +9,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <script src="controller.js"></script>
 </head>
-<body ng-app="app" ng-controller="MainController as main" style="padding: 15px; padding-top: 0px">
+<body ng-app="app" ng-controller="MainController as main"
+      style="padding: 15px; padding-top: 0px">
+
     <h2>Best NBA players tweet stream</h2>
-
-    <!--<p>Get your greeting <a href="/greeting">here</a></p>-->
-
-    <!--<pre>{{main.data}}</pre>-->
-
-    <!--<button type="button" class="btn btn-default" ng-click=" main.load() ">-->
-        <!--main.load()-->
-    <!--</button>-->
-    <!--<button type="button" class="btn btn-default" ng-click=" main.load2() ">-->
-        <!--main.load2()-->
-    <!--</button>-->
-    <!--<button type="button" class="btn btn-default" ng-click=" main.loadPlayers() ">-->
-        <!--main.loadPlayers()-->
-    <!--</button>-->
 
     <button type="button" class="btn btn-default" ng-click=" main.loadPlayers() ">
         load all players
     </button>
 
     <img ng-if="main.waiting" src='/spinner.gif'/>
-
     <small class="badge" ng-if="!(main.waiting)" >{{main.players.length}}</small>
 
-    <br>
-
-    <br>
+    <br><br>
 
     <table class="table table-bordered">
         <thead>
@@ -63,20 +48,6 @@
             <td>{{item.dk_position}}</td>
             <td>{{item.dk_id}}</td>
         </tr>
-        <!--<tr>-->
-            <!--<th scope="row">2</th>-->
-            <!--<td>Jacob</td>-->
-            <!--<td>Thornton</td>-->
-            <!--<td>@fat</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-            <!--<th scope="row">3</th>-->
-            <!--<td>Larry</td>-->
-            <!--<td>the Bird</td>-->
-            <!--<td>@twitter</td>-->
-        <!--</tr>-->
-
-
         </tbody>
     </table>
 
