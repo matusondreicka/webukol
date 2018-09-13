@@ -1,6 +1,8 @@
 # webukol ... Java Homework – Best NBA players tweet stream
 
-to run webukol locally:
+The project is deployed on https://webukol.herokuapp.com/
+
+To run webukol locally you need to clone, build and run SpringBoot application:
 
 `git clone https://github.com/matusondreicka/webukol.git`
 
@@ -10,5 +12,5 @@ to run webukol locally:
 
 `java -jar build/libs/webukol-0.0.1-SNAPSHOT.jar`
 
-Then it is possible to run it http://localhost:8080/
-or it is publiclly deployed on https://webukol.herokuapp.com/
+Then the app is running on http://localhost:8080/ The fronted in AngularJS takes data from endpoint http://localhost:8080/players implementented in Java.
+
