@@ -1,11 +1,11 @@
 # webukol
 
-*webukol 2018*
+to run webukol 2018 locally:
 
-git clone https://github.com/matusondreicka/webukol.git
+`git clone https://github.com/matusondreicka/webukol.git`
 
-cd webukol/
+`cd webukol/`
 
-./gradlew build
+`./gradlew build`
 
-java -jar build/libs/webukol-0.0.1-SNAPSHOT.jar
+`java -jar build/libs/webukol-0.0.1-SNAPSHOT.jar`
